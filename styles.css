@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+:root {
+  --Light-red: hsla(0, 100%, 67%, 0.08);
+  --Orangey-yellow: hsla(39, 100%, 56%, 0.08);
+  --Green-teal: hsla(166, 100%, 37%, 0.08);
+  --Cobalt: hsla(234, 85%, 45%, 0.08);
+
+  --Light-red1: hsl(0, 100%, 67%);
+  --Orangey-yellow1: hsl(39, 100%, 56%);
+  --Green-teal1: hsl(166, 100%, 37%);
+  --Cobalt1: hsl(234, 85%, 45%);
+
+  --light-slate-blue: hsl(252, 100%, 67%);
+  --light-royal-blue: hsl(241, 81%, 54%);
+
+  --Violet-blue: hsla(256, 72%, 46%, 1);
+  --Persian-blue: hsla(241, 72%, 46%, 0);
+
+  --white: hsl(0, 0%, 100%);
+  --white-tint1: hsl(0, 0%, 80%);
+  --White-tint2: hsla(0, 0%, 49%, 0.637);
+  --Pale-blue: hsla(222, 100%, 96%, 0.653);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Dark-grey-blue: hsl(224, 30%, 27%);
+}
+
+body {
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  padding: 5rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  box-shadow: 10px 10px 20px hsla(0, 0%, 0%, 0.1);
+  display: flex;
+  /* gap: 2rem; */
+  /* background-color: pink; */
+  border-radius: 2.5rem;
+}
+
+.flex-item1 {
+  width: 294px;
+  padding: 4.5rem;
+  background: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+  color: var(--white);
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  border-radius: 2.5rem;
+}
+
+.flex-item1 h1 {
+  margin-bottom: 2rem;
+  color: var(--white-tint1);
+}
+
+.flex-item1 .score {
+  width: 15rem;
+  height: 15rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* gap: 0; */
+
+  margin-bottom: 2rem;
+
+  border-radius: 50%;
+
+  background: linear-gradient(
+    to bottom,
+    var(--Violet-blue),
+    var(--Persian-blue)
+  );
+}
+
+.score .score-big {
+  font-weight: 600;
+  font-size: 7rem;
+}
+
+.score p {
+  color: var(--white-tint1);
+  line-height: 0.7;
+  font-size: 1.5rem;
+}
+
+.score .score-big {
+  font-weight: 600;
+  font-size: 5rem;
+  line-height: 0.7;
+}
+
+.score p {
+  color: var(--white-tint1);
+  font-size: 1.5rem;
+}
+
+.score .score-big {
+  font-weight: 600;
+  font-size: 5rem;
+}
+
+.score p {
+  color: var(--white-tint1);
+  font-size: 1.5rem;
+}
+
+.score .score-big {
+  font-weight: 600;
+  font-size: 5rem;
+}
+
+.score p {
+  color: var(--white-tint1);
+  font-size: 1.5rem;
+}
+
+.remark h2 {
+  font-size: 3rem;
+  margin-bottom: 1.3rem;
+}
+
+.remark p {
+  font-size: 1.5rem;
+  color: var(--white-tint1);
+}
+
+/* FLEX-ITEM2 */
+.flex-item2 {
+  width: 294px;
+  padding: 3.5rem;
+  font-weight: 600;
+}
+
+.flex-item2 .head {
+  margin-bottom: 2rem;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.result div {
+  /* background-color: aqua; */
+  /* border: 1px solid black; */
+  font-size: 1.5rem;
+  padding: 1.2rem;
+  border-radius: 0.7rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.result p {
+  display: inline-block;
+}
+
+.icon-logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.results-tabs1 {
+  background-color: var(--Light-red);
+}
+.results-tabs1 p {
+  color: var(--Light-red1);
+}
+.num1 {
+  font-weight: 600;
+}
+.num2 {
+  color: var(--White-tint2);
+}
+
+/*  */
+.results-tabs2 {
+  background-color: var(--Orangey-yellow);
+}
+.results-tabs2 p {
+  color: var(--Orangey-yellow1);
+}
+.num1 {
+  font-weight: 600;
+}
+.num2 {
+  color: var(--White-tint2);
+}
+
+/*  */
+.results-tabs3 {
+  background-color: var(--Green-teal);
+}
+.results-tabs3 p {
+  color: var(--Green-teal1);
+}
+.num1 {
+  font-weight: 600;
+}
+.num2 {
+  color: var(--White-tint2);
+}
+
+/*  */
+.results-tabs4 {
+  background-color: var(--Cobalt);
+}
+.results-tabs4 p {
+  color: var(--Cobalt1);
+}
+.num1 {
+  font-weight: 600;
+}
+.num2 {
+  color: var(--White-tint2);
+}
+
+.flex-mini {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.cta {
+  background-color: var(--Dark-grey-blue);
+  color: var(--white);
+  border: none;
+  padding: 1.3rem 0;
+  border-radius: 25rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cta:hover {
+  background: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+}
+
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+@media screen and (max-width: 462px) {
+  body {
+    padding: 0;
+  }
+
+  .container {
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    margin: 0;
+    margin-top: 0;
+    box-shadow: none;
+    max-width: none;
+    width: 100%;
+  }
+
+  .flex-item1 {
+    width: 100%;
+  }
+
+  .flex-item1 .head {
+    margin-top: 5rem;
+  }
+
+  .flex-item2 {
+    width: 100%;
+    padding-top: 2rem;
+  }
+
+  .flex-mini {
+    gap: 2.4rem;
+  }
+}
